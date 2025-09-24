@@ -10,27 +10,28 @@
     <div class="container">
         <form action="" method="get">
             <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome">
+            <input type="text" name="nome" id="nome" required>
 
 
             <label for="email">Email</label>
-            <input type="text" name="email" id="email">
+            <input type="text" name="email" id="email" required>
             
             <label for="senha">Senha</label>
-            <input type="text" name="senha" id="senha">
+            <input type="text" name="senha" id="senha" required>
 
     
             <label for="genero">Genero</label>
             <div class="radio">
-            <input type="radio" name="genero" id="genero" value="Feminino"><label for="feminino">Feminino</label>
+            <input type="radio" name="genero" id="genero" value="Feminino" checked><label for="feminino">Feminino</label>
             <input type="radio" name="genero" id="genero" value="Masculino"><label for="Masculino">Masculino</label>
             <input type="radio" name="genero" id="genero" value="Trans"><label for="trans">Trans</label>
 </div>
 
             <button type="submit">Enviar</button>
 
-
-
+            <h1>Dados recebidos</h1>
+            <p id="dados"></p>
+        <script src="codigo.js"></script>
         </form>
     </div>
 </body>
